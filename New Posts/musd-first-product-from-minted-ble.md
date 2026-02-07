@@ -98,35 +98,23 @@ One asset. Two chains. Privacy where institutions need it. Composability where D
 
 ---
 
-## the economics
+## why this isn't a stablecoin project — it's a primitive
 
-This isn't charity infrastructure. The revenue model scales directly with TVL:
+Here's the part most people will miss about mUSD, and it's the part that matters most.
 
-At **$100M TVL**: ~$6M from yield spread, $8.1M from Canton App Rewards, $800K from fees — **$14.9M total.**
+Minted's original IP is the Beneficiary-Locked Environment — a dual-state architecture designed to bridge compliant, regulated infrastructure with permissionless composability. The BLE was built as a **primitive**: a modular foundation that could be applied wherever two worlds needed connecting without either side compromising what makes it work.
 
-At **$500M TVL**: ~$30M yield spread, $40.5M app rewards, $4M fees — **$74.5M.**
+The first application of the BLE was bridging utility token markets with legally-backed equity. mUSD is the same core IP applied to a different problem — bridging institutional settlement infrastructure with DeFi liquidity.
 
-At **$1B TVL**: ~$60M yield spread, $81M app rewards, $8M fees — **$149M.**
+Same architecture. Same dual-chain design philosophy. Same compliance-native DAML contracts paired with composable Solidity contracts. Same principle: build the connective tissue between two systems that were never designed to talk to each other.
 
-Revenue sources: yield spread (treasury yield minus holder payout, approximately 6% of TVL), Canton App Rewards (incentives from Canton's ecosystem for top applications), attestation fees from bridge transactions, mint/redeem fees (0.1% each way), and DEX LP fees from protocol-owned liquidity.
+The BLE wasn't built to do one thing. It was built to be the infrastructure layer for wherever this kind of bridging is needed. mUSD is the first proof that the primitive works in production — and the first demonstration of how far the architecture can stretch beyond its original context.
 
-For context on what's realistic: the stablecoin market crossed $300B in 2025 with nearly $100B in new supply in under twelve months. JP Morgan projects $500-750B by 2030. Citi projects $1.9T. The GENIUS Act — signed July 2025 — formally recognized stablecoins as payment instruments, mandating 1:1 reserves, monthly attestations, and AML/KYC compliance while banning uncollateralized algorithmic models. The regulatory clarity that institutional allocators have been waiting for is here.
+The stablecoin market crossed $300B in 2025 with nearly $100B in new supply in under twelve months. JP Morgan projects $500-750B by 2030. Citi projects $1.9T. The GENIUS Act — signed July 2025 — formally recognized stablecoins as payment instruments. The regulatory clarity that institutional allocators have been waiting for is here.
 
-The market for a stablecoin that solves the institutional liquidity paradox isn't theoretical. The $6T sitting on Canton is the addressable market. Every dollar that moves from static Canton holdings into yield-bearing mUSD positions is revenue.
+The question was never whether stablecoins would matter. The question was whether someone would build the one that actually connects the two halves of the financial system that have been growing in parallel.
 
----
-
-## the bigger picture
-
-Here's where mUSD connects to something larger.
-
-Minted's core product is the Beneficiary-Locked Environment — a dual-state token architecture that lets Web3 projects give their token holders actual equity exposure through SPV-held shares, NAV-priced by independent third-party valuators, with SPBD oversight and full Reg D/Reg S compliance. The BLE acts as a 24/7 registrar where token holders can enter a beneficiary state and gain exposure to material corporate events — acquisitions, revenue share, equity issuance — all without the token itself ever becoming a security. Minted acts purely as the conversion infrastructure. The token stays a utility token. The equity stays regulated and custodial. The BLE bridges them.
-
-mUSD is the first product Minted built on its own infrastructure. Every component — the DAML contracts, the Solidity contracts, the cross-chain bridge, the yield aggregation, the compliance layer, the validator infrastructure — was built by the same team using the same engineering philosophy that powers the BLE for external clients.
-
-The pipeline is already active. Bless.network is implementing the BLE for tokenomics repair after a misaligned Binance airdrop. Breakout.app — a crypto consumer credit platform backed by Naval Ravikant — is using it for compliant value-sharing. StandX, a Solana-based stablecoin infrastructure project at $1B valuation, is transitioning from grant-funded to community-owned growth through the BLE. The 2026 pro forma projects $12.78M in cash revenue and $10M in portfolio equity across 15 clients at 91.4% net margin.
-
-mUSD proves the infrastructure works in production. The BLE scales it across the ecosystem.
+That's what the BLE was designed for. mUSD is the first answer.
 
 ---
 
