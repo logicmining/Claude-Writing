@@ -30,13 +30,13 @@ Solving this isn't a wallet-connection problem. It requires five things that don
 
 **Sub-transaction privacy.** Institutions legally cannot have positions visible on a public ledger. A fund manager isn't depositing into Aave knowing every competitor sees their flows in real time. Canton provides this natively. Public chains can't without breaking composability.
 
-**Deterministic finality.** Probabilistic finality creates settlement risk that institutional compliance teams won't accept for large positions. Canton settles with mathematical certainty.
+**Deterministic finality.** Probabilistic finality is settlement risk. Canton settles with mathematical certainty — non-negotiable for large institutional positions.
 
-**Formal verification.** DAML is formally verified. For institutions explaining smart contract risk to auditors, this is the difference between "approved" and "denied."
+**Formal verification.** DAML is formally verified — the difference between an auditor signing off and sending you back to the drawing board.
 
-**Selective regulatory disclosure.** Prove compliance to regulators without exposing counterparty data. Canton's architecture allows exactly this.
+**Selective regulatory disclosure.** Prove compliance to regulators without exposing counterparty data.
 
-**KYC/AML without on-chain identity exposure.** Checks happen off-chain; only pass/fail status crosses to the blockchain. GDPR-compatible.
+**KYC/AML without on-chain identity exposure.** Checks happen off-chain; only pass/fail crosses to the ledger. GDPR-compatible.
 
 No existing protocol addresses all five simultaneously. So we built one.
 
@@ -44,7 +44,7 @@ No existing protocol addresses all five simultaneously. So we built one.
 
 ## what we built
 
-mUSD is Minted's first core product — a stablecoin that exists simultaneously as a DAML contract on Canton and an ERC-20 on Ethereum. Here's how the system works, based on the production codebase:
+mUSD is Minted's first core product — a stablecoin that exists simultaneously as a DAML contract on Canton and an ERC-20 on Ethereum. The Canton side is built against Canton's public documentation and DAML SDK — designed for their asset API, not yet integrated with live institutional counterparties. Here's how the system works:
 
 **Minting.** Deposit USDC into DirectMintV2 on Ethereum, receive mUSD 1:1. No slippage, no DEX, no counterparty. On Canton, minting follows the same logic through DAML contracts with dual-signatory safety.
 
@@ -57,18 +57,6 @@ mUSD is Minted's first core product — a stablecoin that exists simultaneously 
 **Compliance.** On Canton: sub-transaction privacy, formal verification, off-chain KYC/AML gating, selective disclosure, GDPR compatibility. On Ethereum: blacklist, freeze, and transfer validation built into the ERC-20. InstitutionalAssetV4 handles compliant transfers with whitelist enforcement and UTXO-style position management.
 
 One asset. Two chains. Privacy where institutions need it. Composability where DeFi needs it.
-
----
-
-## where this actually stands
-
-I want to be direct about stage, because I think the crypto industry has a credibility problem with premature claims — and I don't want to contribute to it.
-
-The full codebase is built and open: **[github.com/luthatdude/Minted-mUSD-Canton](https://github.com/luthatdude/Minted-mUSD-Canton)**. 20+ Solidity contracts. 15+ DAML modules. Relay infrastructure with independent validator nodes. 30+ test suites. Deployed and tested on Sepolia testnet. Audit underway by Softstack.
-
-What we haven't done yet: mainnet deployment, live Canton integration with institutional counterparties, or regulatory sign-off on the bridge in production. Those are ahead of us, not behind us.
-
-The thesis is proven architecturally. The code works. The next phase is proving it in production with real capital and real institutional participants. That's a different kind of hard, and I'm not going to pretend we're already there.
 
 ---
 
@@ -86,7 +74,19 @@ The stablecoin market crossed $300B in 2025 with nearly $100B in new supply in t
 
 The question was never whether stablecoins would matter. It was whether someone would build the one that actually connects the two halves of the financial system.
 
-That's what the BLE was designed for. mUSD is the first answer — and we're building it in public.
+That's what the BLE was designed for. mUSD is the first answer.
+
+---
+
+## where this actually stands
+
+I want to be direct about stage, because I think the crypto industry has a credibility problem with premature claims — and I don't want to contribute to it.
+
+The full codebase is built and open: **[github.com/luthatdude/Minted-mUSD-Canton](https://github.com/luthatdude/Minted-mUSD-Canton)**. 20+ Solidity contracts. 15+ DAML modules. Relay infrastructure with independent validator nodes. 30+ test suites. Deployed and tested on Sepolia testnet. Audit underway by Softstack.
+
+What we haven't done yet: mainnet deployment, live Canton integration with institutional counterparties, or regulatory sign-off on the bridge in production. Those are ahead of us, not behind us.
+
+The thesis is proven architecturally. The code works. The next phase is proving it in production with real capital and real institutional participants. That's a different kind of hard, and I'm not going to pretend we're already there.
 
 ---
 
