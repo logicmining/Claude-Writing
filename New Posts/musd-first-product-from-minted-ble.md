@@ -62,8 +62,6 @@ One asset. Two chains. Privacy where institutions need it. Composability where D
 
 ## why this isn't a stablecoin project — it's a primitive
 
-Here's the part most people will miss about mUSD, and it's the part that matters most.
-
 Minted's original IP is the Beneficiary-Locked Environment — a dual-state architecture designed to bridge compliant, regulated infrastructure with permissionless composability. The BLE was built as a **primitive**: a modular foundation that could be applied wherever two worlds needed connecting without either side compromising what makes it work.
 
 The first application of the BLE was bridging utility token markets with legally-backed equity. mUSD is the same core IP applied to a different problem — bridging institutional settlement infrastructure with DeFi liquidity.
@@ -89,7 +87,5 @@ What we haven't done yet: mainnet deployment, live Canton integration with insti
 The thesis is proven architecturally. The code works. The next phase is proving it in production with real capital and real institutional participants. That's a different kind of hard, and I'm not going to pretend we're already there.
 
 ---
-
-If you're building in this space or allocating capital into it, the codebase is open and the thesis is on the table. I'd rather show the architecture than oversell the stage.
 
 **[github.com/luthatdude/Minted-mUSD-Canton](https://github.com/luthatdude/Minted-mUSD-Canton)**
